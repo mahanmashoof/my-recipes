@@ -1,0 +1,27 @@
+.todoDescRow {
+    display: flex;
+    align-items: center;
+}
+
+.todoDescRow p {
+    margin-left: 1rem;
+}
+
+.todoDescRow button {
+    margin-left: 1rem;
+    height: 20px
+}
+
+#taskEdit {
+    margin-left: 1rem;
+}
+
+#taskDone {
+    color: gray;
+    text-decoration:line-through;
+    cursor:pointer;
+}
+
+#taskDescr {
+    cursor:pointer;
+}
