@@ -1,6 +1,5 @@
 import { useFetchTodos } from "../../hooks/api/useAPI";
 import { TodoAPI } from "../../models/api/FirebaseAPI";
-import "./Home.css";
 import {
   collection,
   addDoc,
@@ -12,6 +11,7 @@ import firebase from "../../firebase";
 import { useRef, useState } from "react";
 import { COLLECTION_NAME } from "../../types/enums";
 import CommonButton from "../CommonButton/CommonButton";
+import * as S from "./Home.styles";
 
 const Home = () => {
   let task = useRef<HTMLInputElement>(null);
@@ -48,10 +48,6 @@ const Home = () => {
     await deleteDoc(doc(firebase, COLLECTION_NAME, id));
   };
 
-  const todoStatus = (status: boolean) => {
-    return status === true ? "taskDone" : "taskDescr";
-  };
-
   const handleChecked = async (id: string, status: boolean) => {
     const ref = doc(firebase, COLLECTION_NAME, id);
     await updateDoc(ref, {
@@ -67,15 +63,15 @@ const Home = () => {
       <button onClick={addNewDoc}>create</button>
       <p>{unhandledTasks?.length} tasks pending</p>
       {todos?.map((todo: TodoAPI, i) => (
-        <div className="todoDescRow" key={i}>
+        <S.TodoDescRow key={i}>
           {selectedId !== todo.docId ? (
             <>
-              <p
-                id={todoStatus(todo.status)}
+              <S.TaskStatus
+                taskDone={todo.status}
                 onClick={() => handleChecked(todo.docId, todo.status)}
               >
                 {todo.todo}
-              </p>
+              </S.TaskStatus>
               <CommonButton
                 handleStuff={() => handleEdit(todo.docId)}
                 name={"Edit"}
@@ -89,8 +85,7 @@ const Home = () => {
             </>
           ) : (
             <>
-              <input
-                id="taskEdit"
+              <S.TaskEdit
                 ref={editedTask}
                 type="text"
                 defaultValue={todo.todo}
@@ -107,7 +102,7 @@ const Home = () => {
               />
             </>
           )}
-        </div>
+        </S.TodoDescRow>
       ))}
       <p>env = {import.meta.env.DEV ? "dev" : "prod"}</p>
     </div>
