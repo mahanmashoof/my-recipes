@@ -14,13 +14,13 @@ function Recipe() {
           <div style={{ marginBottom: "0.5rem" }}>portions:</div>
           <S.PortionSizeGroup>
             <S.PortionSizeButton style={{ backgroundColor: "#9ec1a3" }}>
-              -
+              +
             </S.PortionSizeButton>
             <S.PortionsInput defaultValue={3} />
             <S.PortionSizeButton
               style={{ backgroundColor: "#70a9a1", color: "#fff" }}
             >
-              +
+              -
             </S.PortionSizeButton>
           </S.PortionSizeGroup>
         </S.PortionsGroup>
