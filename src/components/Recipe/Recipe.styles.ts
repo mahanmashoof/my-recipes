@@ -63,3 +63,9 @@ export const IngredientQuantity = styled.div`
   padding-left: 1rem;
   width: 15%;
 `;
+
+export const StepIngredients = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+`;

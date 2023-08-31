@@ -25,7 +25,10 @@ function Recipe() {
           </S.PortionSizeGroup>
         </S.PortionsGroup>
       </S.NameRow>
-      <div style={{ backgroundColor: "#f6f6f6", padding: "0.5rem 0" }}>
+      <div
+        id="ingredients"
+        style={{ backgroundColor: "#f6f6f6", padding: "0.5rem 0" }}
+      >
         <S.IngredientsRow>
           <S.IngredientIcon src="/img/canola-oil.png" alt="canola oil" />
           <S.IngredientName>Canola oil</S.IngredientName>
@@ -81,7 +84,49 @@ function Recipe() {
           <S.IngredientQuantity>tbs</S.IngredientQuantity>
         </S.IngredientsRow>
       </div>
-      <p>recipe step x</p>
+      <div
+        style={{
+          paddingTop: "2rem",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          backgroundColor: "#cfe0c3",
+        }}
+        id="step1"
+      >
+        <S.StepIngredients>
+          <img src="/img/canola-oil.png" alt="canola oil" />
+          <img src="/img/tofu.png" alt="tofu" />
+        </S.StepIngredients>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            alignItems: "center",
+            margin: "2rem 0 0.5rem",
+          }}
+        >
+          <div>
+            <img src="/img/time.png" alt="time" style={{ height: "2rem" }} />
+            <div>3-5</div>
+          </div>
+          <img
+            style={{ width: "3rem" }}
+            src="/img/arrow-down.png"
+            alt="down arrow"
+          />
+          <div>
+            <img src="/img/flame.png" alt="flame" style={{ height: "2rem" }} />
+            <div>M/H</div>
+          </div>
+        </div>
+        <img
+          style={{ width: "70%", margin: "0 auto 0.5rem" }}
+          src="/img/frying-pan.png"
+          alt="frying pan"
+        />
+        <p>Until golden brown</p>
+      </div>
       <p>step progress bar</p>
       <p>footer w options</p>
     </S.Main>
