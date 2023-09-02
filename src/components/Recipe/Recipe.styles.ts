@@ -69,3 +69,28 @@ export const StepIngredients = styled.div`
   justify-content: space-around;
   margin-bottom: 0.5rem;
 `;
+
+export const RecipeStep = styled.div`
+  padding-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #cfe0c3;
+  margin-bottom: 0.5rem;
+`;
+
+export const RecipeActions = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0 0.5rem;
+`;
+
+export const RecipeActionIcon = styled.img`
+  height: 2rem;
+`;
+
+export const RecipeTool = styled.img`
+  width: 70%;
+  margin: 0 auto 0.5rem;
+`;

@@ -84,30 +84,14 @@ function Recipe() {
           <S.IngredientQuantity>tbs</S.IngredientQuantity>
         </S.IngredientsRow>
       </div>
-      <div
-        style={{
-          paddingTop: "2rem",
-          textAlign: "center",
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "#cfe0c3",
-        }}
-        id="step1"
-      >
+      <S.RecipeStep id="step1">
         <S.StepIngredients>
           <img src="/img/canola-oil.png" alt="canola oil" />
           <img src="/img/tofu.png" alt="tofu" />
         </S.StepIngredients>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            margin: "2rem 0 0.5rem",
-          }}
-        >
+        <S.RecipeActions>
           <div>
-            <img src="/img/time.png" alt="time" style={{ height: "2rem" }} />
+            <S.RecipeActionIcon src="/img/time.png" alt="time" />
             <div>3-5</div>
           </div>
           <img
@@ -116,17 +100,59 @@ function Recipe() {
             alt="down arrow"
           />
           <div>
-            <img src="/img/flame.png" alt="flame" style={{ height: "2rem" }} />
+            <S.RecipeActionIcon src="/img/flame.png" alt="flame" />
             <div>M/H</div>
           </div>
-        </div>
-        <img
-          style={{ width: "70%", margin: "0 auto 0.5rem" }}
-          src="/img/frying-pan.png"
-          alt="frying pan"
-        />
+        </S.RecipeActions>
         <p>Until golden brown</p>
-      </div>
+        <S.RecipeTool src="/img/frying-pan.png" alt="frying pan" />
+      </S.RecipeStep>
+      <S.RecipeStep id="step2">
+        <S.StepIngredients>
+          <img src="/img/garlic.png" alt="garlic" />
+          <img src="/img/ginger.png" alt="ginger" />
+          <img src="/img/chili.png" alt="chili" />
+        </S.StepIngredients>
+        <S.RecipeActions>
+          <div>
+            <S.RecipeActionIcon src="/img/time.png" alt="time" />
+            <div>1</div>
+          </div>
+          <img
+            style={{ width: "3rem" }}
+            src="/img/arrow-down.png"
+            alt="down arrow"
+          />
+          <div>
+            <S.RecipeActionIcon src="/img/flame.png" alt="flame" />
+            <div>M/H</div>
+          </div>
+        </S.RecipeActions>
+        <p>Until fragrant</p>
+        <S.RecipeTool src="/img/frying-pan.png" alt="frying pan" />
+      </S.RecipeStep>
+      <S.RecipeStep id="step3">
+        <S.StepIngredients>
+          <img src="/img/soy-sauce.png" alt="soy-sauce" />
+        </S.StepIngredients>
+        <S.RecipeActions>
+          <div>
+            <S.RecipeActionIcon src="/img/time.png" alt="time" />
+            <div>-</div>
+          </div>
+          <img
+            style={{ width: "3rem" }}
+            src="/img/arrow-down.png"
+            alt="down arrow"
+          />
+          <div>
+            <S.RecipeActionIcon src="/img/flame.png" alt="flame" />
+            <div>M/H</div>
+          </div>
+        </S.RecipeActions>
+        <p>To taste</p>
+        <S.RecipeTool src="/img/frying-pan.png" alt="frying pan" />
+      </S.RecipeStep>
       <p>step progress bar</p>
       <p>footer w options</p>
     </S.Main>
