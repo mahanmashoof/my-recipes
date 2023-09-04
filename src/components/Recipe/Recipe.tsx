@@ -27,7 +27,7 @@ function Recipe() {
       </S.NameRow>
       <div
         id="ingredients"
-        style={{ backgroundColor: "#f6f6f6", padding: "0.5rem 0" }}
+        style={{ backgroundColor: "#f6f6f6", padding: "0.5rem 0.5rem 0" }}
       >
         <S.IngredientsRow>
           <S.IngredientIcon src="/img/canola-oil.png" alt="canola oil" />

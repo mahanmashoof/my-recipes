@@ -7,7 +7,7 @@ export const Main = styled.div`
 export const NameRow = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 1rem auto 2rem;
+  margin: 1rem 0.5rem 2rem;
   align-items: center;
 `;
 
