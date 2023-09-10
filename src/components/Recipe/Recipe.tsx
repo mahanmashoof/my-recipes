@@ -84,7 +84,7 @@ function Recipe() {
           <S.IngredientQuantity>tbs</S.IngredientQuantity>
         </S.IngredientsRow>
       </div>
-      <S.RecipeStep id="step1">
+      <S.RecipeStep style={{ backgroundColor: "#9ec1a3" }} id="step1">
         <S.StepIngredients>
           <img src="/img/canola-oil.png" alt="canola oil" />
           <img src="/img/tofu.png" alt="tofu" />
@@ -106,6 +106,7 @@ function Recipe() {
         </S.RecipeActions>
         <p>Until golden brown</p>
         <S.RecipeTool src="/img/frying-pan.png" alt="frying pan" />
+        <S.Checked src="/img/check-mark.png" alt="check-mark" />
       </S.RecipeStep>
       <S.RecipeStep id="step2">
         <S.StepIngredients>

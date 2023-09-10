@@ -77,6 +77,7 @@ export const RecipeStep = styled.div`
   flex-direction: column;
   background-color: #cfe0c3;
   margin-bottom: 0.5rem;
+  position: relative;
 `;
 
 export const RecipeActions = styled.div`
@@ -93,4 +94,10 @@ export const RecipeActionIcon = styled.img`
 export const RecipeTool = styled.img`
   width: 70%;
   margin: 0 auto 0.5rem;
+`;
+export const Checked = styled.img`
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  width: 1rem;
 `;
