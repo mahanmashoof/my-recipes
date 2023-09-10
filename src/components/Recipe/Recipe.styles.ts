@@ -95,9 +95,24 @@ export const RecipeTool = styled.img`
   width: 70%;
   margin: 0 auto 0.5rem;
 `;
+
 export const Checked = styled.img`
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
   right: 1rem;
-  width: 1rem;
+  width: 2rem;
+`;
+
+export const ProgressContainer = styled.div`
+  background-color: #1f363d;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+`;
+
+export const ProgressBar = styled.div`
+  height: 1rem;
+  margin: 0 3px;
+  background-color: #cfe0c3;
+  width: -webkit-fill-available;
 `;

@@ -154,7 +154,11 @@ function Recipe() {
         <p>To taste</p>
         <S.RecipeTool src="/img/frying-pan.png" alt="frying pan" />
       </S.RecipeStep>
-      <p>step progress bar</p>
+      <S.ProgressContainer>
+        <S.ProgressBar style={{ backgroundColor: "#70a9a1" }} />
+        <S.ProgressBar />
+        <S.ProgressBar />
+      </S.ProgressContainer>
       <p>footer w options</p>
     </S.Main>
   );
