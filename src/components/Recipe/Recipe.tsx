@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import * as S from "./Recipe.styles";
 
 function Recipe() {
@@ -159,7 +160,7 @@ function Recipe() {
         <S.ProgressBar />
         <S.ProgressBar />
       </S.ProgressContainer>
-      <p>footer w options</p>
+      <Footer />
     </S.Main>
   );
 }
