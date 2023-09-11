@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: "Grape Nuts", cursive;
 `;
 
 export const NameRow = styled.div`
@@ -78,6 +78,8 @@ export const RecipeStep = styled.div`
   background-color: #cfe0c3;
   margin-bottom: 0.5rem;
   position: relative;
+  font-family: "Long Cang", cursive;
+  font-size: 2rem;
 `;
 
 export const RecipeActions = styled.div`
